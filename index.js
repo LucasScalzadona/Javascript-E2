@@ -61,5 +61,23 @@ console.log("-----Ejercicio B");
 
 const PizzasBaratas = (() => {
   const PizzasBaratas = pizzas.filter((pizza) => pizza.precio < 600);
-  console.log("Pizzas con precio menor a 600:", PizzasBaratas);
+  console.log("Pizzas con un precio menor a 600:", PizzasBaratas);
+})();
+
+console.log("-----Ejercicio C");
+
+const NombrePrecio = (() => {
+  const info = pizzas.map((pizza) => console.log(pizza.nombre, pizza.precio));
+})();
+
+console.log("-----Ejercicio D");
+
+const Mostraringredientes = (() => {
+  const ingredientes = pizzas.map((pizza) => {
+    console.log(
+      `La pizza ${pizza.nombre} contiene los siguientes ingredientes:`
+    );
+    pizza.ingredientes.map((ingrediente) => console.log(ingrediente));
+    console.log("");
+  });
 })();
