@@ -74,9 +74,7 @@ console.log("-----Ejercicio D");
 
 const Mostraringredientes = (() => {
   const ingredientes = pizzas.map((pizza) => {
-    console.log(
-      `La pizza ${pizza.nombre} contiene los siguientes ingredientes:`
-    );
+    console.log(`La  ${pizza.nombre} contiene los siguientes ingredientes:`);
     pizza.ingredientes.map((ingrediente) => console.log(ingrediente));
     console.log("");
   });
